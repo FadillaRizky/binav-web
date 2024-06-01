@@ -45,3 +45,11 @@ async function login(email, password) {
   
     return await response.json();
   }
+
+
+  const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
